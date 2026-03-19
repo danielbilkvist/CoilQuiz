@@ -1,5 +1,5 @@
 import { useState } from "react";
-import data from "../../questions.json";
+import data from "../questions.json";
 import "./question-modal.css";
 
 const { themes } = data;

@@ -1,10 +1,10 @@
 {
   "themes": {
     "general": "#2A2A2A",
+    "geography": "#3498DB",
     "nature": "#2ECC71",
     "history": "#8E44AD",
     "culture": "#E74C3C",
-    "geography": "#3498DB",
     "food&drinks": "#F39C12"
   },
   "questions": [
