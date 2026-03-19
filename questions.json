@@ -1,0 +1,28 @@
+[
+{
+  "id": "1",
+  "title": "Sample Question",
+  "image": "image_url_here",
+  "theme": "general",
+  "icon": "icon_name_here",
+  "color": "#ffffff"
+},
+
+{
+    "id": "2",
+    "title": "Another Question",
+    "image": "another_image_url_here",
+    "theme": "science",
+    "icon": "another_icon_name_here",
+    "color": "#000000"
+},
+
+{
+    "id": "3",
+    "title": "Sample Question",
+    "image": "image_url_here",
+    "theme": "general",
+    "icon": "icon_name_here",
+    "color": "#ffffff"
+}
+]
