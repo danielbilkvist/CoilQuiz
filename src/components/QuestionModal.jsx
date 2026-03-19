@@ -27,20 +27,20 @@ export default function QuestionModal({ question, onClose, onAnswered }) {
         </div>
 
         <div className="modal-body">
-          {question.image && question.image !== "image_url_here" && (
+          <div className={`modal-question ${showAnswer ? "hide" : ""}`}>
+            <h3>{question.title}</h3>
+          </div>
+
+          {question.image && (
             <div className="modal-image">
               <img src={question.image} alt={question.title} />
             </div>
           )}
 
-          <div className={`modal-question ${showAnswer ? "hide" : ""}`}>
-            <p>{question.title}</p>
-          </div>
-
           {showAnswer && (
             <div className="modal-answer">
-              <p>What is...</p>
-              <h3>{question.title}?</h3>
+              <p>Answer:</p>
+              <h3>{question.answer}</h3>
             </div>
           )}
         </div>

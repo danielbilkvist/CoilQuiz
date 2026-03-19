@@ -1,54 +1,396 @@
 {
   "themes": {
-    "general": "#FF6B6B",
+    "general": "#2A2A2A",
     "nature": "#2ECC71",
     "history": "#8E44AD",
     "culture": "#E74C3C",
     "geography": "#3498DB",
-    "food and drinks": "#F39C12"
+    "food&drinks": "#F39C12"
   },
   "questions": [
     {
       "id": "1",
-      "title": "Sample Question",
+      "title": "Sample Question 1",
       "image": "image_url_here",
       "theme": "general",
-      "icon": "icon_name_here"
+      "icon": "icon_name_here",
+      "answer": "Sample Answer"
     },
     {
       "id": "2",
-      "title": "Another Question",
-      "image": "another_image_url_here",
-      "theme": "nature",
-      "icon": "another_icon_name_here"
+      "title": "Sample Question 2",
+      "image": "image_url_here",
+      "theme": "general",
+      "icon": "icon_name_here",
+      "answer": "Sample Answer"
     },
     {
       "id": "3",
-      "title": "Sample Question",
+      "title": "Sample Question 3",
       "image": "image_url_here",
       "theme": "general",
-      "icon": "icon_name_here"
+      "icon": "icon_name_here",
+      "answer": "Sample Answer"
     },
     {
       "id": "4",
-      "title": "History Question",
+      "title": "Sample Question 4",
       "image": "image_url_here",
-      "theme": "history",
-      "icon": "icon_name_here"
-    },    
+      "theme": "general",
+      "icon": "icon_name_here",
+      "answer": "Sample Answer"
+    },
     {
       "id": "5",
-      "title": "History Question",
+      "title": "Sample Question 5",
       "image": "image_url_here",
-      "theme": "culture",
-      "icon": "icon_name_here"
+      "theme": "general",
+      "icon": "icon_name_here",
+      "answer": "Sample Answer"
     },
     {
       "id": "6",
-      "title": "History Question",
+      "title": "Sample Question 6",
+      "image": "image_url_here",
+      "theme": "general",
+      "icon": "icon_name_here",
+      "answer": "Sample Answer"
+    },
+    {
+      "id": "7",
+      "title": "Sample Question 7",
+      "image": "image_url_here",
+      "theme": "general",
+      "icon": "icon_name_here",
+      "answer": "Sample Answer"
+    },
+    {
+      "id": "8",
+      "title": "Sample Question 8",
+      "image": "image_url_here",
+      "theme": "general",
+      "icon": "icon_name_here",
+      "answer": "Sample Answer"
+    },
+    {
+      "id": "9",
+      "title": "Nature Question 1",
+      "image": "another_image_url_here",
+      "theme": "nature",
+      "icon": "icon_name_here",
+      "answer": "Nature Answer"
+    },
+    {
+      "id": "10",
+      "title": "Nature Question 2",
+      "image": "image_url_here",
+      "theme": "nature",
+      "icon": "icon_name_here",
+      "answer": "Nature Answer"
+    },
+    {
+      "id": "11",
+      "title": "Nature Question 3",
+      "image": "image_url_here",
+      "theme": "nature",
+      "icon": "icon_name_here",
+      "answer": "Nature Answer"
+    },
+    {
+      "id": "12",
+      "title": "Nature Question 4",
+      "image": "image_url_here",
+      "theme": "nature",
+      "icon": "icon_name_here",
+      "answer": "Nature Answer"
+    },
+    {
+      "id": "13",
+      "title": "Nature Question 5",
+      "image": "image_url_here",
+      "theme": "nature",
+      "icon": "icon_name_here",
+      "answer": "Nature Answer"
+    },
+    {
+      "id": "14",
+      "title": "Nature Question 6",
+      "image": "image_url_here",
+      "theme": "nature",
+      "icon": "icon_name_here",
+      "answer": "Nature Answer"
+    },
+    {
+      "id": "15",
+      "title": "Nature Question 7",
+      "image": "image_url_here",
+      "theme": "nature",
+      "icon": "icon_name_here",
+      "answer": "Nature Answer"
+    },
+    {
+      "id": "16",
+      "title": "Nature Question 8",
+      "image": "image_url_here",
+      "theme": "nature",
+      "icon": "icon_name_here",
+      "answer": "Nature Answer"
+    },
+    {
+      "id": "17",
+      "title": "History Question 1",
+      "image": "image_url_here",
+      "theme": "history",
+      "icon": "icon_name_here",
+      "answer": "History Answer"
+    },
+    {
+      "id": "18",
+      "title": "History Question 2",
+      "image": "image_url_here",
+      "theme": "history",
+      "icon": "icon_name_here",
+      "answer": "History Answer"
+    },
+    {
+      "id": "19",
+      "title": "History Question 3",
+      "image": "image_url_here",
+      "theme": "history",
+      "icon": "icon_name_here",
+      "answer": "History Answer"
+    },
+    {
+      "id": "20",
+      "title": "History Question 4",
+      "image": "image_url_here",
+      "theme": "history",
+      "icon": "icon_name_here",
+      "answer": "History Answer"
+    },
+    {
+      "id": "21",
+      "title": "History Question 5",
+      "image": "image_url_here",
+      "theme": "history",
+      "icon": "icon_name_here",
+      "answer": "History Answer"
+    },
+    {
+      "id": "22",
+      "title": "History Question 6",
+      "image": "image_url_here",
+      "theme": "history",
+      "icon": "icon_name_here",
+      "answer": "History Answer"
+    },
+    {
+      "id": "23",
+      "title": "History Question 7",
+      "image": "image_url_here",
+      "theme": "history",
+      "icon": "icon_name_here",
+      "answer": "History Answer"
+    },
+    {
+      "id": "24",
+      "title": "History Question 8",
+      "image": "image_url_here",
+      "theme": "history",
+      "icon": "icon_name_here",
+      "answer": "History Answer"
+    },
+    {
+      "id": "25",
+      "title": "Culture Question 1",
+      "image": "/src/assets/images/beer.avif",
+      "theme": "culture",
+      "icon": "icon_name_here",
+      "answer": "Culture Answer"
+    },
+    {
+      "id": "26",
+      "title": "Culture Question 2",
       "image": "image_url_here",
       "theme": "culture",
-      "icon": "icon_name_here"
+      "icon": "icon_name_here",
+      "answer": "Culture Answer"
+    },
+    {
+      "id": "27",
+      "title": "Culture Question 3",
+      "image": "image_url_here",
+      "theme": "culture",
+      "icon": "icon_name_here",
+      "answer": "Culture Answer"
+    },
+    {
+      "id": "28",
+      "title": "Culture Question 4",
+      "image": "image_url_here",
+      "theme": "culture",
+      "icon": "icon_name_here",
+      "answer": "Culture Answer"
+    },
+    {
+      "id": "29",
+      "title": "Culture Question 5",
+      "image": "image_url_here",
+      "theme": "culture",
+      "icon": "icon_name_here",
+      "answer": "Culture Answer"
+    },
+    {
+      "id": "30",
+      "title": "Culture Question 6",
+      "image": "image_url_here",
+      "theme": "culture",
+      "icon": "icon_name_here",
+      "answer": "Culture Answer"
+    },
+    {
+      "id": "31",
+      "title": "Culture Question 7",
+      "image": "image_url_here",
+      "theme": "culture",
+      "icon": "icon_name_here",
+      "answer": "Culture Answer"
+    },
+    {
+      "id": "32",
+      "title": "Culture Question 8",
+      "image": "image_url_here",
+      "theme": "culture",
+      "icon": "icon_name_here",
+      "answer": "Culture Answer"
+    },
+    {
+      "id": "33",
+      "title": "Geography Question 1",
+      "image": "image_url_here",
+      "theme": "geography",
+      "icon": "icon_name_here",
+      "answer": "Geography Answer"
+    },
+    {
+      "id": "34",
+      "title": "Geography Question 2",
+      "image": "image_url_here",
+      "theme": "geography",
+      "icon": "icon_name_here",
+      "answer": "Geography Answer"
+    },
+    {
+      "id": "35",
+      "title": "Geography Question 3",
+      "image": "image_url_here",
+      "theme": "geography",
+      "icon": "icon_name_here",
+      "answer": "Geography Answer"
+    },
+    {
+      "id": "36",
+      "title": "Geography Question 4",
+      "image": "image_url_here",
+      "theme": "geography",
+      "icon": "icon_name_here",
+      "answer": "Geography Answer"
+    },
+    {
+      "id": "37",
+      "title": "Geography Question 5",
+      "image": "image_url_here",
+      "theme": "geography",
+      "icon": "icon_name_here",
+      "answer": "Geography Answer"
+    },
+    {
+      "id": "38",
+      "title": "Geography Question 6",
+      "image": "image_url_here",
+      "theme": "geography",
+      "icon": "icon_name_here",
+      "answer": "Geography Answer"
+    },
+    {
+      "id": "39",
+      "title": "Geography Question 7",
+      "image": "image_url_here",
+      "theme": "geography",
+      "icon": "icon_name_here",
+      "answer": "Geography Answer"
+    },
+    {
+      "id": "40",
+      "title": "Geography Question 8",
+      "image": "image_url_here",
+      "theme": "geography",
+      "icon": "icon_name_here",
+      "answer": "Geography Answer"
+    },
+    {
+      "id": "41",
+      "title": "Food and Drinks Question 1",
+      "image": "image_url_here",
+      "theme": "food&drinks",
+      "icon": "icon_name_here",
+      "answer": "Food and Drinks Answer"
+    },
+    {
+      "id": "42",
+      "title": "Food and Drinks Question 2",
+      "image": "image_url_here",
+      "theme": "food&drinks",
+      "icon": "icon_name_here",
+      "answer": "Food and Drinks Answer"
+    },
+    {
+      "id": "43",
+      "title": "Food and Drinks Question 3",
+      "image": "image_url_here",
+      "theme": "food&drinks",
+      "icon": "icon_name_here",
+      "answer": "Food and Drinks Answer"
+    },
+    {
+      "id": "44",
+      "title": "Food and Drinks Question 4",
+      "image": "image_url_here",
+      "theme": "food&drinks",
+      "icon": "icon_name_here",
+      "answer": "Food and Drinks Answer"
+    },
+    {
+      "id": "45",
+      "title": "Food and Drinks Question 5",
+      "image": "image_url_here",
+      "theme": "food&drinks",
+      "icon": "icon_name_here",
+      "answer": "Food and Drinks Answer"
+    },
+    {
+      "id": "46",
+      "title": "Food and Drinks Question 6",
+      "image": "image_url_here",
+      "theme": "food&drinks",
+      "icon": "icon_name_here",
+      "answer": "Food and Drinks Answer"
+    },
+    {
+      "id": "47",
+      "title": "Food and Drinks Question 7",
+      "image": "image_url_here",
+      "theme": "food&drinks",
+      "icon": "icon_name_here",
+      "answer": "Food and Drinks Answer"
+    },
+    {
+      "id": "48",
+      "title": "Food and Drinks Question 8",
+      "image": "image_url_here",
+      "theme": "food&drinks",
+      "icon": "icon_name_here",
+      "answer": "Food and Drinks Answer"
     }
   ]
 }
