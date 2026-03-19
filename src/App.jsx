@@ -1,8 +1,19 @@
-import './App.css'
-import CoilLanding from './components/CoilLanding.jsx'
+import "./App.css";
+import Board from "./components/Board";
 
 function App() {
-  return <CoilLanding />
+  return (
+    <div className="app">
+      <header className="app-header">
+        <h1>
+          <span className="dutch">Dutch</span>
+          <span className="or"> or </span>
+          <span className="danish">Danish</span>
+        </h1>
+      </header>
+      <Board />
+    </div>
+  );
 }
 
-export default App
+export default App;

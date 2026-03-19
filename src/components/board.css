@@ -1,0 +1,140 @@
+.board-container {
+  padding: 15px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  flex: 1;
+  overflow-y: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.category-column {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.category-header {
+  padding: 12px 8px;
+  border-radius: 6px 6px 0 0;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.category-header h3 {
+  margin: 0;
+  font-size: clamp(14px, 3vw, 18px);
+  letter-spacing: 1px;
+}
+
+.questions-column {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.question-button {
+  padding: 15px 10px;
+  font-size: clamp(16px, 4vw, 24px);
+  font-weight: bold;
+  border: 3px solid;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.question-button:hover:not(:disabled) {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.question-button:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.question-button.answered {
+  opacity: 0.4;
+  cursor: not-allowed;
+  font-size: clamp(20px, 5vw, 32px);
+  color: #333;
+}
+
+.question-button:disabled {
+  cursor: not-allowed;
+}
+
+/* Tablet devices (768px and below) */
+@media (max-width: 768px) {
+  .board-container {
+    padding: 10px;
+  }
+
+  .board {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .category-column {
+    gap: 5px;
+  }
+
+  .category-header {
+    padding: 10px 6px;
+  }
+
+  .questions-column {
+    gap: 5px;
+  }
+
+  .question-button {
+    padding: 12px 8px;
+    min-height: 50px;
+    border: 2px solid;
+  }
+}
+
+/* Mobile devices (480px and below) */
+@media (max-width: 480px) {
+  .board-container {
+    padding: 8px;
+  }
+
+  .board {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 8px;
+  }
+
+  .category-column {
+    gap: 4px;
+  }
+
+  .category-header {
+    padding: 8px 4px;
+  }
+
+  .questions-column {
+    gap: 4px;
+  }
+
+  .question-button {
+    padding: 10px 6px;
+    min-height: 45px;
+    border: 2px solid;
+  }
+}

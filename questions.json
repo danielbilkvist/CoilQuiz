@@ -1,28 +1,54 @@
-[
 {
-  "id": "1",
-  "title": "Sample Question",
-  "image": "image_url_here",
-  "theme": "general",
-  "icon": "icon_name_here",
-  "color": "#ffffff"
-},
-
-{
-    "id": "2",
-    "title": "Another Question",
-    "image": "another_image_url_here",
-    "theme": "science",
-    "icon": "another_icon_name_here",
-    "color": "#000000"
-},
-
-{
-    "id": "3",
-    "title": "Sample Question",
-    "image": "image_url_here",
-    "theme": "general",
-    "icon": "icon_name_here",
-    "color": "#ffffff"
+  "themes": {
+    "general": "#FF6B6B",
+    "nature": "#2ECC71",
+    "history": "#8E44AD",
+    "culture": "#E74C3C",
+    "geography": "#3498DB",
+    "food and drinks": "#F39C12"
+  },
+  "questions": [
+    {
+      "id": "1",
+      "title": "Sample Question",
+      "image": "image_url_here",
+      "theme": "general",
+      "icon": "icon_name_here"
+    },
+    {
+      "id": "2",
+      "title": "Another Question",
+      "image": "another_image_url_here",
+      "theme": "nature",
+      "icon": "another_icon_name_here"
+    },
+    {
+      "id": "3",
+      "title": "Sample Question",
+      "image": "image_url_here",
+      "theme": "general",
+      "icon": "icon_name_here"
+    },
+    {
+      "id": "4",
+      "title": "History Question",
+      "image": "image_url_here",
+      "theme": "history",
+      "icon": "icon_name_here"
+    },    
+    {
+      "id": "5",
+      "title": "History Question",
+      "image": "image_url_here",
+      "theme": "culture",
+      "icon": "icon_name_here"
+    },
+    {
+      "id": "6",
+      "title": "History Question",
+      "image": "image_url_here",
+      "theme": "culture",
+      "icon": "icon_name_here"
+    }
+  ]
 }
-]
