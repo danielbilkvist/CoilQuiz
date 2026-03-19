@@ -1,0 +1,392 @@
+.coil {
+  --surface: color-mix(in srgb, var(--bg) 92%, var(--text-h) 8%);
+  --surface2: color-mix(in srgb, var(--bg) 84%, var(--text-h) 16%);
+  --hairline: color-mix(in srgb, var(--border) 75%, transparent);
+  --radius: 14px;
+  --radiusSm: 10px;
+  --padX: 32px;
+  --padY: 26px;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+}
+
+@media (max-width: 720px) {
+  .coil {
+    --padX: 18px;
+    --padY: 18px;
+  }
+}
+
+.coilHeader {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 14px var(--padX);
+  border-bottom: 1px solid var(--border);
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter: blur(10px);
+}
+
+@media (max-width: 900px) {
+  .coilHeader {
+    grid-template-columns: 1fr auto;
+    gap: 12px;
+  }
+}
+
+.coilBrand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.coilBrandMark {
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: radial-gradient(circle at 30% 30%, #fff, var(--accent));
+  box-shadow:
+    0 0 0 3px color-mix(in srgb, var(--accent) 20%, transparent),
+    0 12px 30px -18px var(--accent);
+}
+
+.coilBrandName {
+  font-family: var(--heading);
+  letter-spacing: -0.4px;
+  font-weight: 650;
+  color: var(--text-h);
+}
+
+.coilNav {
+  display: inline-flex;
+  gap: 18px;
+}
+
+.coilNavLink {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.coilNavLink:hover {
+  background: var(--social-bg);
+  color: var(--text-h);
+}
+
+@media (max-width: 900px) {
+  .coilNav {
+    display: none;
+  }
+}
+
+.coilHeaderCtas {
+  display: inline-flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.coilBtn {
+  appearance: none;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  font: 600 14px/1 var(--sans);
+  padding: 10px 12px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  white-space: nowrap;
+  transition:
+    transform 0.06s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.coilBtn:active {
+  transform: translateY(1px);
+}
+
+.coilBtn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.coilBtnPrimary {
+  color: color-mix(in srgb, var(--text-h) 8%, white);
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--accent) 90%, white) 0%,
+    var(--accent) 100%
+  );
+  box-shadow: 0 10px 24px -18px var(--accent);
+}
+
+.coilBtnPrimary:hover {
+  box-shadow: 0 16px 40px -24px var(--accent);
+}
+
+.coilBtnGhost {
+  color: var(--text-h);
+  background: color-mix(in srgb, var(--bg) 75%, var(--text-h) 25%);
+  border-color: var(--hairline);
+}
+
+.coilBtnGhost:hover {
+  background: color-mix(in srgb, var(--bg) 65%, var(--text-h) 35%);
+}
+
+.coilMain {
+  flex: 1;
+  padding: 22px var(--padX) 46px;
+}
+
+.coilHero {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 22px;
+  align-items: center;
+  padding: 26px;
+  border-radius: calc(var(--radius) + 8px);
+  border: 1px solid var(--border);
+  background:
+    radial-gradient(
+      900px 300px at 10% 10%,
+      color-mix(in srgb, var(--accent) 18%, transparent),
+      transparent 60%
+    ),
+    radial-gradient(
+      500px 260px at 90% 30%,
+      color-mix(in srgb, var(--accent) 10%, transparent),
+      transparent 55%
+    ),
+    var(--surface);
+}
+
+@media (max-width: 900px) {
+  .coilHero {
+    grid-template-columns: 1fr;
+    padding: 18px;
+  }
+}
+
+.coilKicker {
+  display: inline-flex;
+  width: fit-content;
+  font-size: 13px;
+  letter-spacing: 0.2px;
+  color: var(--text-h);
+  background: color-mix(in srgb, var(--accent-bg) 65%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent-border) 70%, transparent);
+  padding: 6px 10px;
+  border-radius: 999px;
+  margin: 0 0 14px;
+}
+
+.coilTitle {
+  margin: 0;
+  font-size: 56px;
+  letter-spacing: -1.8px;
+  line-height: 1.02;
+}
+
+@media (max-width: 720px) {
+  .coilTitle {
+    font-size: 42px;
+  }
+}
+
+.coilSubtitle {
+  margin-top: 14px;
+  max-width: 54ch;
+  color: var(--text);
+}
+
+.coilHeroActions {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.coilStats {
+  margin: 22px 0 0;
+  padding: 14px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface2);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+@media (max-width: 720px) {
+  .coilStats {
+    grid-template-columns: 1fr;
+  }
+}
+
+.coilStat dt {
+  font-family: var(--heading);
+  font-weight: 650;
+  color: var(--text-h);
+  letter-spacing: -0.2px;
+}
+
+.coilStat dd {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.coilHeroArt {
+  position: relative;
+  min-height: 240px;
+  border-radius: calc(var(--radius) + 8px);
+  border: 1px solid var(--border);
+  background:
+    radial-gradient(
+      420px 240px at 50% 20%,
+      color-mix(in srgb, var(--accent) 26%, transparent),
+      transparent 70%
+    ),
+    linear-gradient(180deg, var(--surface2), var(--surface));
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+@media (max-width: 900px) {
+  .coilHeroArt {
+    min-height: 220px;
+  }
+}
+
+.coilGlow {
+  position: absolute;
+  inset: -40%;
+  background: radial-gradient(
+    circle at 60% 40%,
+    color-mix(in srgb, var(--accent) 28%, transparent),
+    transparent 55%
+  );
+  filter: blur(22px);
+  opacity: 0.9;
+}
+
+.coilHeroImg {
+  position: relative;
+  width: min(360px, 86%);
+  height: auto;
+  transform: translateY(6px);
+}
+
+.coilSection {
+  margin-top: 28px;
+  padding: 0;
+}
+
+.coilSectionTitle {
+  margin: 0 0 12px;
+  font-size: 28px;
+  letter-spacing: -0.6px;
+}
+
+.coilSectionSubtitle {
+  margin: 0;
+  color: var(--text);
+}
+
+.coilGrid3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+@media (max-width: 900px) {
+  .coilGrid3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.coilCard {
+  text-align: left;
+  padding: 16px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.coilCardTitle {
+  margin: 0 0 8px;
+  font-size: 18px;
+  letter-spacing: -0.2px;
+  color: var(--text-h);
+  font-family: var(--heading);
+  font-weight: 650;
+}
+
+.coilCardBody {
+  margin: 0;
+  color: var(--text);
+  font-size: 15px;
+}
+
+.coilQuizCta {
+  border-radius: calc(var(--radius) + 8px);
+  border: 1px solid var(--border);
+  background:
+    radial-gradient(
+      650px 220px at 30% 20%,
+      color-mix(in srgb, var(--accent) 14%, transparent),
+      transparent 65%
+    ),
+    var(--surface2);
+  padding: 18px;
+}
+
+.coilQuizCtaInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  text-align: left;
+}
+
+@media (max-width: 900px) {
+  .coilQuizCtaInner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.coilQuizCtas {
+  display: inline-flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.coilFooter {
+  padding: 18px var(--padX);
+  border-top: 1px solid var(--border);
+}
+
+.coilFooterText {
+  margin: 0;
+  font-size: 14px;
+  color: var(--text);
+}
+
