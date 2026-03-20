@@ -2,16 +2,23 @@ import { useState, useMemo } from "react";
 import data from "../questions.json";
 import QuestionModal from "./QuestionModal";
 import "./board.css";
+import BackIcon from "../assets/icons/Back.svg";
+import RandomIcon from "../assets/icons/Random.svg";
+import GeographyIcon from "../assets/icons/Geography.svg";
+import NatureIcon from "../assets/icons/Nature.svg";
+import HistoryIcon from "../assets/icons/History.svg";
+import CultureIcon from "../assets/icons/Culture.svg";
+import FoodIcon from "../assets/icons/Food n Drinks.svg";
 
 const { themes, questions } = data;
 
 const themeMetadata = {
-  general: { icon: "/src/assets/icons/Random.svg" },
-  geography: { icon: "/src/assets/icons/Geography.svg" },
-  nature: { icon: "/src/assets/icons/Nature.svg" },
-  history: { icon: "/src/assets/icons/History.svg" },
-  culture: { icon: "/src/assets/icons/Culture.svg" },
-  "food&drinks": { icon: "/src/assets/icons/Food n Drinks.svg" },
+  general: { icon: RandomIcon },
+  geography: { icon: GeographyIcon },
+  nature: { icon: NatureIcon },
+  history: { icon: HistoryIcon },
+  culture: { icon: CultureIcon },
+  "food&drinks": { icon: FoodIcon },
 };
 
 export default function Board({ selectedTheme, onBack }) {
@@ -42,8 +49,12 @@ export default function Board({ selectedTheme, onBack }) {
 
   return (
     <div className="board-container">
-      <button className="emoji-back-button" onClick={onBack}>
-        ⬅️
+      <button
+        className="emoji-back-button"
+        onClick={onBack}
+        style={{ backgroundColor: themeColor }}
+      >
+        <img src={BackIcon} alt="Back" />
       </button>
 
       <div className="theme-header" style={{ backgroundColor: themeColor }}>

@@ -16,14 +16,24 @@
   position: absolute;
   top: 20px;
   left: 20px;
-  background: rgba(255, 255, 255, 0.9);
   border: none;
-  font-size: 32px;
   cursor: pointer;
   padding: 10px 14px;
   border-radius: 8px;
   transition: all 0.2s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+
+.emoji-back-button img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
 }
 
 .emoji-back-button:hover {

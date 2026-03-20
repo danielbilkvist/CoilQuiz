@@ -2,33 +2,39 @@ import { useState } from "react";
 import data from "../questions.json";
 import Board from "./Board";
 import "./selection-screen.css";
+import RandomIcon from "../assets/icons/Random.svg";
+import GeographyIcon from "../assets/icons/Geography.svg";
+import NatureIcon from "../assets/icons/Nature.svg";
+import HistoryIcon from "../assets/icons/History.svg";
+import CultureIcon from "../assets/icons/Culture.svg";
+import FoodIcon from "../assets/icons/Food n Drinks.svg";
 
 const { themes } = data;
 
 // Theme metadata with icons and descriptions
 const themeMetadata = {
   general: {
-    icon: "/src/assets/icons/Random.svg",
+    icon: RandomIcon,
     subtitle: "General Knowledge",
   },
   geography: {
-    icon: "/src/assets/icons/Geography.svg",
+    icon: GeographyIcon,
     subtitle: "Locations & Places",
   },
   nature: {
-    icon: "/src/assets/icons/Nature.svg",
+    icon: NatureIcon,
     subtitle: "Natural World",
   },
   history: {
-    icon: "/src/assets/icons/History.svg",
+    icon: HistoryIcon,
     subtitle: "Historical Events",
   },
   culture: {
-    icon: "/src/assets/icons/Culture.svg",
+    icon: CultureIcon,
     subtitle: "Arts & Culture",
   },
   "food&drinks": {
-    icon: "/src/assets/icons/Food n Drinks.svg",
+    icon: FoodIcon,
     subtitle: "Food & Beverages",
   },
 };
