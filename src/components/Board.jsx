@@ -13,7 +13,7 @@ import FoodIcon from "../assets/icons/Food n Drinks.svg";
 const { themes, questions } = data;
 
 const themeMetadata = {
-  general: { icon: RandomIcon },
+  everything: { icon: RandomIcon },
   geography: { icon: GeographyIcon },
   nature: { icon: NatureIcon },
   history: { icon: HistoryIcon },
@@ -21,9 +21,13 @@ const themeMetadata = {
   "food&drinks": { icon: FoodIcon },
 };
 
-export default function Board({ selectedTheme, onBack }) {
+export default function Board({
+  selectedTheme,
+  onBack,
+  answeredQuestions,
+  onQuestionAnswered,
+}) {
   const [selectedQuestion, setSelectedQuestion] = useState(null);
-  const [answeredQuestions, setAnsweredQuestions] = useState(new Set());
 
   // Get questions for the selected theme
   const themeQuestions = useMemo(() => {
@@ -39,7 +43,7 @@ export default function Board({ selectedTheme, onBack }) {
 
   const handleAnswerSelected = () => {
     if (selectedQuestion) {
-      setAnsweredQuestions((prev) => new Set([...prev, selectedQuestion.id]));
+      onQuestionAnswered(selectedQuestion.id);
       setSelectedQuestion(null);
     }
   };

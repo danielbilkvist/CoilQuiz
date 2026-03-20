@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import data from "../questions.json";
 import Board from "./Board";
 import "./selection-screen.css";
@@ -13,9 +13,9 @@ const { themes } = data;
 
 // Theme metadata with icons and descriptions
 const themeMetadata = {
-  general: {
+  everything: {
     icon: RandomIcon,
-    subtitle: "General Knowledge",
+    subtitle: "Everything",
   },
   geography: {
     icon: GeographyIcon,
@@ -41,12 +41,38 @@ const themeMetadata = {
 
 export default function SelectionScreen() {
   const [selectedTheme, setSelectedTheme] = useState(null);
+  const [answeredQuestions, setAnsweredQuestions] = useState(() => {
+    const saved = localStorage.getItem("answeredQuestions");
+    if (saved) {
+      try {
+        return new Set(JSON.parse(saved));
+      } catch (e) {
+        console.error("Failed to load answered questions from localStorage", e);
+        return new Set();
+      }
+    }
+    return new Set();
+  });
+
+  // Save answered questions to localStorage whenever they change
+  useEffect(() => {
+    localStorage.setItem(
+      "answeredQuestions",
+      JSON.stringify(Array.from(answeredQuestions)),
+    );
+  }, [answeredQuestions]);
+
+  const handleQuestionAnswered = (questionId) => {
+    setAnsweredQuestions((prev) => new Set([...prev, questionId]));
+  };
 
   if (selectedTheme) {
     return (
       <Board
         selectedTheme={selectedTheme}
         onBack={() => setSelectedTheme(null)}
+        answeredQuestions={answeredQuestions}
+        onQuestionAnswered={handleQuestionAnswered}
       />
     );
   }

@@ -1,6 +1,6 @@
 {
   "themes": {
-    "general": "#2A2A2A",
+    "everything": "#2A2A2A",
     "geography": "#3498DB",
     "nature": "#2ECC71",
     "history": "#8E44AD",
@@ -12,7 +12,7 @@
       "id": "1",
       "title": "Sample Question 1",
       "image": "image_url_here",
-      "theme": "general",
+      "theme": "everything",
       "icon": "icon_name_here",
       "answer": "Sample Answer"
     },
@@ -20,7 +20,7 @@
       "id": "2",
       "title": "Sample Question 2",
       "image": "image_url_here",
-      "theme": "general",
+      "theme": "everything",
       "icon": "icon_name_here",
       "answer": "Sample Answer"
     },
@@ -28,7 +28,7 @@
       "id": "3",
       "title": "Sample Question 3",
       "image": "image_url_here",
-      "theme": "general",
+      "theme": "everything",
       "icon": "icon_name_here",
       "answer": "Sample Answer"
     },
@@ -36,7 +36,7 @@
       "id": "4",
       "title": "Sample Question 4",
       "image": "image_url_here",
-      "theme": "general",
+      "theme": "everything",
       "icon": "icon_name_here",
       "answer": "Sample Answer"
     },
@@ -44,7 +44,7 @@
       "id": "5",
       "title": "Sample Question 5",
       "image": "image_url_here",
-      "theme": "general",
+      "theme": "everything",
       "icon": "icon_name_here",
       "answer": "Sample Answer"
     },
@@ -52,7 +52,7 @@
       "id": "6",
       "title": "Sample Question 6",
       "image": "image_url_here",
-      "theme": "general",
+      "theme": "everything",
       "icon": "icon_name_here",
       "answer": "Sample Answer"
     },
@@ -60,7 +60,7 @@
       "id": "7",
       "title": "Sample Question 7",
       "image": "image_url_here",
-      "theme": "general",
+      "theme": "everything",
       "icon": "icon_name_here",
       "answer": "Sample Answer"
     },
@@ -68,7 +68,7 @@
       "id": "8",
       "title": "Sample Question 8",
       "image": "image_url_here",
-      "theme": "general",
+      "theme": "everything",
       "icon": "icon_name_here",
       "answer": "Sample Answer"
     },
