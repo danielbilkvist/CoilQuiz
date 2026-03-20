@@ -66,6 +66,11 @@ export default function SelectionScreen() {
     setAnsweredQuestions((prev) => new Set([...prev, questionId]));
   };
 
+  const handleReset = () => {
+    setAnsweredQuestions(new Set());
+    localStorage.removeItem("answeredQuestions");
+  };
+
   if (selectedTheme) {
     return (
       <Board
@@ -85,6 +90,11 @@ export default function SelectionScreen() {
           <span className="or"> or </span>
           <span className="denmark">Denmark</span>
         </h1>
+        {answeredQuestions.size > 0 && (
+          <button className="reset-button" onClick={handleReset}>
+            Reset All Questions
+          </button>
+        )}
       </header>
 
       <div className="card-grid">
