@@ -7,9 +7,28 @@ const { themes } = data;
 export default function QuestionModal({ question, onClose, onAnswered }) {
   const [showAnswer, setShowAnswer] = useState(false);
 
+  const handleShowAnswer = () => {
+    setShowAnswer(true);
+    // Call the flag if it exists and is a function
+    if (question.flag && typeof question.flag === "function") {
+      question.flag();
+    }
+  };
+
   const handleAnswered = () => {
     onAnswered();
     setShowAnswer(false);
+  };
+
+  // Handle both local paths and URLs
+  const getImageSrc = (imagePath) => {
+    if (!imagePath) return "";
+    // If it's a full URL, use as-is
+    if (imagePath.startsWith("http")) {
+      return imagePath;
+    }
+    // If it's a local path, prepend the base URL
+    return import.meta.env.BASE_URL + imagePath.replace(/^\//, "");
   };
 
   return (
@@ -31,17 +50,24 @@ export default function QuestionModal({ question, onClose, onAnswered }) {
             <h3>{question.title}</h3>
           </div>
 
-          {question.image && (
+          {!showAnswer && question.image && (
             <div className="modal-image">
-              <img src={question.image} alt={question.title} />
+              <img src={getImageSrc(question.image)} alt={question.title} />
             </div>
           )}
 
           {showAnswer && (
-            <div className="modal-answer">
-              <p>Answer:</p>
-              <h3>{question.answer}</h3>
-            </div>
+            <>
+              {question.flag && (
+                <div className="modal-image">
+                  <img src={getImageSrc(question.flag)} alt="flag" />
+                </div>
+              )}
+              <div className="modal-answer">
+                <p>Answer:</p>
+                <h3>{question.answer}</h3>
+              </div>
+            </>
           )}
         </div>
 
@@ -49,7 +75,7 @@ export default function QuestionModal({ question, onClose, onAnswered }) {
           {!showAnswer ? (
             <button
               className="btn btn-primary"
-              onClick={() => setShowAnswer(true)}
+              onClick={handleShowAnswer}
               style={{ backgroundColor: themes[question.theme] }}
             >
               Show Answer
