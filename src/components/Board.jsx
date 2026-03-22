@@ -16,7 +16,7 @@ const themeMetadata = {
   everything: { icon: RandomIcon },
   geography: { icon: GeographyIcon },
   nature: { icon: NatureIcon },
-  history: { icon: HistoryIcon },
+  "geo-guessr": { icon: HistoryIcon },
   culture: { icon: CultureIcon },
   "food&drinks": { icon: FoodIcon },
 };

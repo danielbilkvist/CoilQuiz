@@ -3,7 +3,7 @@
     "everything": "#2A2A2A",
     "geography": "#3498DB",
     "nature": "#2ECC71",
-    "history": "#8E44AD",
+    "geo-guessr": "#8E44AD",
     "culture": "#E74C3C",
     "food&drinks": "#F39C12"
   },
@@ -154,93 +154,93 @@
     },
     {
       "id": "17",
-      "title": "History Question 1",
-      "image": "image_url_here",
-      "theme": "history",
+      "title": "What country has the oldest national anthem, still in use?",
+      "image": "/images/anthem.avif",
+      "theme": "geo-guessr",
       "icon": "icon_name_here",
-      "answer": "History Answer",
-      "flag": null
+      "answer": "Netherlands",
+      "flag": "/images/dutch.avif"
     },
     {
       "id": "18",
-      "title": "History Question 2",
-      "image": "image_url_here",
-      "theme": "history",
+      "title": "history",
+      "image": "/images/eurovision.avif",
+      "theme": "geo-guessr",
       "icon": "icon_name_here",
-      "answer": "History Answer",
-      "flag": null
+      "answer": "Denmark",
+      "flag": "/images/danish.avif"
     },
     {
       "id": "19",
-      "title": "History Question 3",
+      "title": "-",
       "image": "image_url_here",
-      "theme": "history",
+      "theme": "geo-guessr",
       "icon": "icon_name_here",
-      "answer": "History Answer",
+      "answer": "Geo Guessr Answer",
       "flag": null
     },
     {
       "id": "20",
-      "title": "History Question 4",
+      "title": "Geo Guessr Question 4",
       "image": "image_url_here",
-      "theme": "history",
+      "theme": "geo-guessr",
       "icon": "icon_name_here",
-      "answer": "History Answer",
+      "answer": "Geo Guessr Answer",
       "flag": null
     },
     {
       "id": "21",
-      "title": "History Question 5",
+      "title": "Geo Guessr Question 5",
       "image": "image_url_here",
-      "theme": "history",
+      "theme": "geo-guessr",
       "icon": "icon_name_here",
-      "answer": "History Answer",
+      "answer": "Geo Guessr Answer",
       "flag": null
     },
     {
       "id": "22",
-      "title": "History Question 6",
+      "title": "Geo Guessr Question 6",
       "image": "image_url_here",
-      "theme": "history",
+      "theme": "geo-guessr",
       "icon": "icon_name_here",
-      "answer": "History Answer",
+      "answer": "Geo Guessr Answer",
       "flag": null
     },
     {
       "id": "23",
-      "title": "History Question 7",
+      "title": "Geo Guessr Question 7",
       "image": "image_url_here",
-      "theme": "history",
+      "theme": "geo-guessr",
       "icon": "icon_name_here",
-      "answer": "History Answer",
+      "answer": "Geo Guessr Answer",
       "flag": null
     },
     {
       "id": "24",
-      "title": "History Question 8",
+      "title": "Geo Guessr Question 8",
       "image": "image_url_here",
-      "theme": "history",
+      "theme": "geo-guessr",
       "icon": "icon_name_here",
-      "answer": "History Answer",
+      "answer": "Geo Guessr Answer",
       "flag": null
     },
     {
       "id": "25",
-      "title": "Culture Question 1",
-      "image": "/images/beer.avif",
+      "title": "Which country won the Eurovision Song Contest in 2013?",
+      "image": "/images/eurovision.avif",
       "theme": "culture",
       "icon": "icon_name_here",
-      "answer": "Culture Answer",
-      "flag": null
+      "answer": "Denmark",
+      "flag": "/images/danish.avif"
     },
     {
       "id": "26",
-      "title": "Culture Question 2",
-      "image": "image_url_here",
+      "title": "Who won the european football championship in 1992?",
+      "image": "/images/1992.avif",
       "theme": "culture",
       "icon": "icon_name_here",
-      "answer": "Culture Answer",
-      "flag": null
+      "answer": "Denmark",
+      "flag": "/images/danish.avif"
     },
     {
       "id": "27",
@@ -374,71 +374,71 @@
       "image": "/images/fish.avif",
       "theme": "food&drinks",
       "icon": "icon_name_here",
-      "answer": "Denmark",
-      "flag": "/images/denmark.avif"
+      "answer": "Danish",
+      "flag": "/images/danish.avif"
     },
     {
       "id": "42",
-      "title": "Food and Drinks Question 2",
+      "title": "Which country exports more beer?",
       "image": "/images/beer.avif",
       "theme": "food&drinks",
       "icon": "icon_name_here",
-      "answer": "Food and Drinks Answer",
-      "flag": null
+      "answer": "Dutch",
+      "flag": "/images/dutch.avif"
     },
     {
       "id": "43",
-      "title": "Food and Drinks Question 3",
-      "image": "image_url_here",
+      "title": "Because of this country, carrots are orange.",
+      "image": "/images/carrot.avif",
       "theme": "food&drinks",
       "icon": "icon_name_here",
-      "answer": "Food and Drinks Answer",
-      "flag": null
+      "answer": "Dutch",
+      "flag": "/images/dutch.avif"
     },
     {
       "id": "44",
-      "title": "Food and Drinks Question 4",
-      "image": "image_url_here",
+      "title": "What country drinks the most alcohol per week?",
+      "image": "/images/alcohol.avif",
       "theme": "food&drinks",
       "icon": "icon_name_here",
-      "answer": "Food and Drinks Answer",
-      "flag": null
+      "answer": "Danish",
+      "flag": "/images/danish.avif"
     },
     {
       "id": "45",
-      "title": "Food and Drinks Question 5",
-      "image": "image_url_here",
+      "title": "What country drinks the most coffee?",
+      "image": "/images/coffee.avif",
       "theme": "food&drinks",
       "icon": "icon_name_here",
-      "answer": "Food and Drinks Answer",
-      "flag": null
+      "answer": "Danish",
+      "flag": "/images/danish.avif"
     },
     {
       "id": "46",
-      "title": "Food and Drinks Question 6",
-      "image": "image_url_here",
+      "title": "This country invented Gin.",
+      "image": "/images/gin.avif",
       "theme": "food&drinks",
       "icon": "icon_name_here",
-      "answer": "Food and Drinks Answer",
-      "flag": null
+      "answer": "Dutch",
+      "flag": "/images/dutch.avif"
     },
     {
       "id": "47",
-      "title": "Food and Drinks Question 7",
-      "image": "image_url_here",
+      "title": "Which country consumes the most liquorice?",
+      "image": "/images/liquorice.avif",
       "theme": "food&drinks",
       "icon": "icon_name_here",
-      "answer": "Food and Drinks Answer",
-      "flag": null
+      "answer": "Danish",
+      "flag": "/images/danish.avif"
     },
     {
       "id": "48",
-      "title": "Food and Drinks Question 8",
-      "image": "image_url_here",
+      "title": "What country consumes the most chocolate?",
+      "image": "/images/chocolate.avif",
       "theme": "food&drinks",
       "icon": "icon_name_here",
-      "answer": "Food and Drinks Answer",
-      "flag": null
+      "answer": "Danish",
+      "flag": "/images/danish.avif"
     }
   ]
 }

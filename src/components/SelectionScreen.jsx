@@ -15,23 +15,23 @@ const { themes } = data;
 const themeMetadata = {
   everything: {
     icon: RandomIcon,
-    subtitle: "Everything",
+    subtitle: "These didnt fit into any other category",
   },
   geography: {
     icon: GeographyIcon,
-    subtitle: "Locations & Places",
+    subtitle: "People and places",
   },
   nature: {
     icon: NatureIcon,
     subtitle: "Natural World",
   },
-  history: {
+  "geo-guessr": {
     icon: HistoryIcon,
-    subtitle: "Historical Events",
+    subtitle: "Guess the country from the image",
   },
   culture: {
     icon: CultureIcon,
-    subtitle: "Arts & Culture",
+    subtitle: "History and Traditions",
   },
   "food&drinks": {
     icon: FoodIcon,

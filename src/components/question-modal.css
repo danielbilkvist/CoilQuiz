@@ -115,6 +115,11 @@
   animation: fadeInQuestion 0.5s ease;
 }
 
+.modal-question h3 {
+  margin: 0;
+  color: #333;
+}
+
 @keyframes fadeInQuestion {
   from {
     opacity: 0;
