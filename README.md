@@ -40,3 +40,13 @@ cmd example:
 ```cmd
 set VITE_BASE_PATH=/CoilQuiz/ && npm run build
 ```
+
+## GitHub Pages (recommended)
+
+This repo includes a workflow at `.github/workflows/deploy-pages.yml` that builds Vite and deploys `dist` to GitHub Pages.
+
+1. Push to `main`.
+2. In GitHub: Settings -> Pages -> Build and deployment -> Source, choose `GitHub Actions`.
+3. Wait for the `Deploy to GitHub Pages` workflow to finish.
+
+Important: Do not deploy the repository root directly for a Vite app. GitHub Pages must serve the built `dist` output.
