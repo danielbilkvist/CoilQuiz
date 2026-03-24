@@ -23,7 +23,7 @@ const themeMetadata = {
   },
   nature: {
     icon: NatureIcon,
-    subtitle: "Natural World",
+    subtitle: "Weather, animals and land",
   },
   "geo-guessr": {
     icon: HistoryIcon,
@@ -35,7 +35,7 @@ const themeMetadata = {
   },
   "food&drinks": {
     icon: FoodIcon,
-    subtitle: "Food & Beverages",
+    subtitle: "What we consume",
   },
 };
 
