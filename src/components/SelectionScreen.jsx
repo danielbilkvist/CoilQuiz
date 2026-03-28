@@ -31,7 +31,7 @@ const themeMetadata = {
   },
   culture: {
     icon: CultureIcon,
-    subtitle: "History and Traditions",
+    subtitle: "History and traditions",
   },
   "food&drinks": {
     icon: FoodIcon,
